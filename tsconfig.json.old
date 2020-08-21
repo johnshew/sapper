@@ -1,0 +1,18 @@
+{
+    "extends": "@tsconfig/svelte/tsconfig.json",
+  
+    "include": ["src/**/*", "src/node_modules"],
+    "exclude": ["node_modules/*", "__sapper__/*", "public/*", "static"],
+    "typeRoots": ["types"],
+    "types": [
+        "svelte",
+        "@sapper"
+      ],
+      "allowSyntheticDefaultImports": true,  /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
+      "lib": [
+        "DOM",
+        "ES2017",
+        "WebWorker"
+      ],
+
+}
